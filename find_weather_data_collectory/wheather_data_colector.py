@@ -24,9 +24,10 @@ location_data = {"name" : name,
                  "latitude":latitude,
                  "longitude":longitude}
 
+print(location_data)
 
-with open("weather_location.json" , "w") as file:
-    json.dump(location_data,file)
+
+
     
     
 
