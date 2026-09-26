@@ -1,0 +1,7 @@
+import json
+with open("weather_location.json", "r") as file:
+    content = json.load(file)
+    latitude = content["latitude"]
+    longitude = content ["longitude"]
+    
+print(latitude,longitude)
