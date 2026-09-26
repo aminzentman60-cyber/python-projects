@@ -1,0 +1,21 @@
+{
+    "city": "tehran",
+    "temperature": 21.0,
+    "relative_humidity": 33,
+    "wind_speed": 0.5
+}{
+    "city": "tehran",
+    "temperature": 21.0,
+    "relative_humidity": 34,
+    "wind_speed": 1.1
+}{
+    "city": "berlin",
+    "temperature": 21.0,
+    "relative_humidity": 34,
+    "wind_speed": 1.1
+}{
+    "city": "Tokyo",
+    "temperature": 21.0,
+    "relative_humidity": 34,
+    "wind_speed": 1.1
+}

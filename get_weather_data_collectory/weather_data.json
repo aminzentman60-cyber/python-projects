@@ -1,5 +1,6 @@
-[
-    15.2,
-    56,
-    18.1
-]
+{
+    "city": "tehran",
+    "temperature": 21.0,
+    "relative_humidity": 33,
+    "wind_speed": 0.5
+}

@@ -1,9 +1,17 @@
 import requests
 import json
-
+city = input("enter the city please : ")
+url = "https://geocoding-api.open-meteo.com/v1/search"
+p = {
+    "name" : city ,
+    "count": 1,
+    "language": "en",
+    "format": "json"
+}
 try:
-    respond = requests.get("https://geocoding-api.open-meteo.com/v1/search?name=Berlin&count=1&language=en&format=json" , 
-                           timeout = 10)
+    respond = requests.get(url , 
+                           params=p,
+                           timeout = 1000)
     print(respond.status_code)
     
     respond.raise_for_status()
@@ -27,7 +35,7 @@ location_data = {"name" : name,
 print(location_data)
 
 
-with open("weather_location.json" , "w") as file:
+with open("weather_location.json" , "a") as file:
     json.dump(location_data,file)
     
     

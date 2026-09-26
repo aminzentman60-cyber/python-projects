@@ -1,17 +1,20 @@
 import json
 import requests
+city = input("enter the city please:  ")
 with open("weather_location.json","r") as file:
     content = json.load(file)
+    city = content["name"]
     latitude = content["latitude"]
     longitude = content ["longitude"]
-params ={"latitude":latitude,
+params ={ 
+         "latitude":latitude,
          "longitude" : longitude,
          "current": "temperature_2m,relative_humidity_2m,wind_speed_10m"
          }
     
 try:
     respond = requests.get("https://api.open-meteo.com/v1/forecast",
-                       timeout=5,
+                       timeout=1000,
                        params=params)
 
     print(respond.status_code)
@@ -20,6 +23,7 @@ except requests.exceptions.RequestException as e:
 
 
 data = respond.json()
+print(data)
 
 
 
@@ -27,12 +31,14 @@ temperature =  data["current"]["temperature_2m"]
 relative_humidity = data["current"]["relative_humidity_2m"]
 wind_speed = data ["current"]["wind_speed_10m"]
 
-all_data = temperature,relative_humidity,wind_speed
+all_data = {
+            "temperature": temperature , 
+            "relative_humidity":  relative_humidity , "wind_speed": wind_speed }
 
 
-print(f"the temperature is : {temperature}, and the relative_humidity is : { relative_humidity} , and the wind_speed is : {wind_speed}")
+print(f" the temperature is : {temperature} , and the relative_humidity is : { relative_humidity}  , and the wind_speed is : {wind_speed}")
 
 
 
-with open("weather_data.json" , "w",encoding="utf_8") as file:
+with open("weather_data.json" , "a",encoding="utf_8") as file:
     json.dump(all_data,file,indent=4)
