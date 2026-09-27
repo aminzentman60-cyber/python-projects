@@ -35,8 +35,17 @@ location_data = {"name" : name,
 print(location_data)
 
 
-with open("weather_location.json" , "a") as file:
-    json.dump(location_data,file)
+
+
+with open("weather_location.json", "r") as file:
+    content = json.load(file)
+    content =[]
+
+with open("weather_location.json", "a", encoding="utf-8") as file:
+    json.dump(location_data, file, indent=4)
+    content.append(location_data)
+
+
     
     
 
