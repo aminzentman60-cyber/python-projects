@@ -1,9 +1,12 @@
-[]{
-    "name": "Tehran",
-    "latitude": 35.69439,
-    "longitude": 51.42151
-}{
-    "name": "Tehran",
-    "latitude": 35.69439,
-    "longitude": 51.42151
-}
+[
+    {
+        "name": "Tehran",
+        "latitude": 35.69439,
+        "longitude": 51.42151
+    },
+    {
+        "name": "Dubai",
+        "latitude": 25.07725,
+        "longitude": 55.30927
+    }
+]

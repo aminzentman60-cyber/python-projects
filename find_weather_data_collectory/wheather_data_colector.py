@@ -35,15 +35,23 @@ location_data = {"name" : name,
 print(location_data)
 
 
+try:
+    with open("weather_location.json", "r", encoding="utf-8") as file:
+        content = json.load(file)
+
+except (FileNotFoundError, json.JSONDecodeError):
+    content = []
 
 
-with open("weather_location.json", "r") as file:
-    content = json.load(file)
-    content =[]
+# اضافه کردن اطلاعات جدید
+content.append(location_data)
 
-with open("weather_location.json", "a", encoding="utf-8") as file:
-    json.dump(location_data, file, indent=4)
-    content.append(location_data)
+
+# ذخیره کل لیست
+with open("weather_location.json", "w", encoding="utf-8") as file:
+    json.dump(content, file, indent=4)
+    
+    
 
 
     
