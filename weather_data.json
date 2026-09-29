@@ -1,1 +1,20 @@
-[]
+{
+    "temperature": 30.6,
+    "relative_humidity": 18,
+    "wind_speed": 10.1
+}
+{
+    "temperature": 31.6,
+    "relative_humidity": 9,
+    "wind_speed": 10.7
+}{
+    "name": "Kerman",
+    "temperature": 31.4,
+    "relative_humidity": 9,
+    "wind_speed": 10.0
+}{
+    "name": "Kerman",
+    "temperature": 31.4,
+    "relative_humidity": 9,
+    "wind_speed": 10.0
+}

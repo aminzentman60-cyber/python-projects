@@ -8,5 +8,20 @@
         "name": "Dubai",
         "latitude": 25.07725,
         "longitude": 55.30927
+    },
+    {
+        "name": "Tehran",
+        "latitude": 35.69439,
+        "longitude": 51.42151
+    },
+    {
+        "name": "Rafsanj\u0101n",
+        "latitude": 30.4067,
+        "longitude": 55.9939
+    },
+    {
+        "name": "Kerman",
+        "latitude": 30.28321,
+        "longitude": 57.07879
     }
 ]
