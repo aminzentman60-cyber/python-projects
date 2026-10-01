@@ -23,5 +23,25 @@
         "name": "Kerman",
         "latitude": 30.28321,
         "longitude": 57.07879
+    },
+    {
+        "name": "Kerman",
+        "latitude": 30.28321,
+        "longitude": 57.07879
+    },
+    {
+        "name": "Melbourn",
+        "latitude": 52.08128,
+        "longitude": 0.01514
+    },
+    {
+        "name": "Newyork",
+        "latitude": 56.25,
+        "longitude": -5.28333
+    },
+    {
+        "name": "Londane",
+        "latitude": -15.38472,
+        "longitude": 34.24222
     }
 ]

@@ -20,7 +20,7 @@ except requests.exceptions.RequestException as error:
     print(f"you have an error the error is {error}")
     
 data = respond.json()
-print(data)
+
 
 
 
